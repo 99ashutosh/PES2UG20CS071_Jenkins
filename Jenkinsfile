@@ -12,6 +12,9 @@ pipeline {
         sh '/var/jenkins_home/workspace/PES2UG20CS071-1/hello_exec'
       }
     }
+    stage('Deploy') {
+      echo 'Deployed Successfully!'
+    }
   }
   post {
     failure {
