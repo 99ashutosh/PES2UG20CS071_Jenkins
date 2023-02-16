@@ -13,7 +13,9 @@ pipeline {
       }
     }
     stage('Deploy') {
-      echo 'Deployed Successfully!'
+      steps {
+        echo 'Deployed Successfully!'
+      }
     }
   }
   post {
